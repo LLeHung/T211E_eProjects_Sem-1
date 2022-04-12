@@ -326,7 +326,6 @@
 /*header seach*/
 .header-with-search{
     height: var(--heder-with-search-heigth);
-    display: flex;
     align-items: center;
 }
 .header__logo{
@@ -336,4 +335,6 @@
     width: 150px;
     color: var(--white-color);
 }
-
+.header__search{
+    background-color: var(--white-color);
+}
