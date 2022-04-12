@@ -1,5 +1,5 @@
 .header{
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 .header__navbar{
@@ -9,6 +9,7 @@
 .header__navbar-list{
     list-style: none;
     padding-left: 0;
+    margin: 4px 0 0 0;
 }
 .header__navbar-item{
     margin: 0 8px;
@@ -322,3 +323,17 @@
 .auth-form__help-for{
     color: var(--primary-color);
 }
+/*header seach*/
+.header-with-search{
+    height: var(--heder-with-search-heigth);
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+    width: 200px;
+}
+.header__logo-img{
+    width: 150px;
+    color: var(--white-color);
+}
+
