@@ -105,8 +105,22 @@
                               data-was-processed="true"
                       />
                   </div>
+
                   <div class="header__search">
-                      <input type="text" class="header__search-input" placeholder="Nhập Để Tìm Kiếm Sản Phẩm">
+                      <div class="header__search-input-wrap">
+                          <input type="text" class="header__search-input" placeholder="Nhập Để Tìm Kiếm Sản Phẩm">
+                          <div class="header__search-history">
+                              <h3 class="header__search-history-heading">Lịch Sử Tìm Kiếm</h3>
+                              <ul class="header__search-history-list">
+                                  <li class="header__search-history-item">
+                                      <a href="">Bánh kem ngon 1</a>
+                                  </li>
+                                  <li class="header__search-history-item">
+                                      <a href="">Bánh kem ngon 1</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
                       <div class="header__search-select">
                           <span class="header__search-select-label">Trong Shop</span>
                           <i class="header__search-select-icon fas fa-angle-down"></i>
@@ -126,7 +140,15 @@
                       </button>
                   </div>
                   <div class="header__cart">
-                      <i class="header__cart-icon fas fa-shopping-cart"></i>
+                      <div class="header__cart-wrap">
+                          <i class="header__cart-icon fas fa-shopping-cart"></i>
+                          <div class="header__cart-list header__cart-list--no-cart">
+                              <img src="./css/imgs/no.jpg" alt="" class="header__cart-list--no-cart-img">
+                              <span class="header__cart-list-no-cart-msg">
+                              Chưa Có Sản Phẩm
+                          </span>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>
