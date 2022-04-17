@@ -8,28 +8,130 @@
     <title>Giới Thiệu</title>
     <%- include("stylesheet.ejs") %>
     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="section header">
-    <div class="container">
-        noi dung header
-    </div>
-</header>
+<div class="app">
+    <header class="header">
+        <div class="grid">
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                        Sweet for life Bakery
+                        <div class="header__qr">
+                            <img src="./images/qrcode_bizweb.dktcdn.net.png" alt="QR code" class="header__qr-img">
+                            <div class="header__qr-apps">
+                                <a href="" class="header__qr-link">
+                                    <img src="./images/googleplay.png" alt="Google Play" class="header__qr-download-img">
+                                </a>
+                                <a href="" class="header__qr-link">
+                                    <img src="./images/appstore.png" alt="AppStore" class="header__qr-download-img">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-poiter">Kết Nối</span>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-solid fa-bell"></i>
+                            Thông Báo
+                        </a>
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>Thông Báo Mới</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item .header__notify-item--view">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./images/banh-sinh-nhat-dep.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Bánh Kem Hương Vị Vệt</span>
+                                            <span class="header__notify-desciotion">Mô Tả Bánh Kem Hương Vị Việt</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./images/banh-sinh-nhat-dep.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Bánh Kem Hương Vị Vệt</span>
+                                            <span class="header__notify-desciotion">Mô Tả Bánh Kem Hương Vị Việt</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header__notify-item">
+                                    <a href="" class="header__notify-link">
+                                        <img src="./images/banh-sinh-nhat-dep.jpg" alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Bánh Kem Hương Vị Vệt</span>
+                                            <span class="header__notify-desciotion">Mô Tả Bánh Kem Hương Vị Việt</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header__notify--footer">
+                                <a href="" class="header__notify--footer-btn">Xem Tất Cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon far fa-question-circle"></i>
+                            Trợ Giúp</a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng Ký</li>
+                    <li class="header__navbar-item header__navbar-item--strong">Đăng Nhập</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+
 <nav class="section navigator">
     <div class="container">
-        nav
+    <h1>Giới Thiệu</h1>
     </div>
 </nav>
 <section class="section main">
     <div class="container">
         <article class="content">
             <div class="entry">
-                <p>content</p>
+                <p>Tên tiệm bánh được đặt để bày tỏ tình yêu nước Ý của những người thợ đầu tiên được may mắn trải nghiệm sống và học làm bánh ở đây. 
+                    Biết làm sao khi họ trót yêu tiếng Ý- một tiếng Latin gốc, vốn dài, khó đọc và cũng phức tạp như những cung bậc tình yêu? 
+                    Khi họ trót đam mê vị ngọt thơm, mềm mịn đầy quyến rũ của từng chiếc bánh, trót quá yêu những tác phẩm ngọt ngào nho nhỏ chính tay mình làm ra… 
+                    Và trót yêu cảm giác hạnh phúc bình dị  khi chuyển những thông điệp yêu thương từ trái tim đến trái tim qua những chiếc bánh nhỏ xinh...
+                    Chúng tôi hiện diện được hơn 5 năm (từ 2012) từ 1 góc ở SG Pearl đến 68 Nguyễn Cửu Vân (Bình Thạnh), rồi là 17a Nguyễn Thị Minh Khai (Quận 1). 
+                    Hiện nay tiệm nằm yên ắng ở địa chỉ 460/4 Lê Văn Lương, P. Tân Phong, Quận 7. 
+                    Cũng trải qua nhiều thăng trầm, thất bại và nhiều lần muốn bỏ cuộc vì kinh doanh tử tế và vì đam mê không hề dễ dàng chút nào.
+                    Xin cám ơn các bạn đã chào đón những chiếc bánh thủ công mà những người thợ Dolce Vita đã tận tụy làm ra. 
+                    Bằng tất cả tình cảm và lòng tự trọng của người làm bánh, 
+                    chúng tôi cam kết sử dụng những nguyên liệu rõ ràng (được phân phối chính ngạch bởi những công ty nhập khẩu, 
+                    hay nhà sản xuất ở VN có uy tín); trái cây tươi đạt chứng nhận của VietGap, Global Gap);
+                    màu thực phẩm nếu có đều là của hãng Wilton hay America Color với hơn 100 năm danh tiếng ở Mỹ. 
+                    Cộng với việc cân chỉnh công thức hợp lý, chúng tôi đang tạo ra những chiếc bánh hợp với khẩu vị châu Á và xu hướng ít ngọt hiện nay. 
+                    Mơ ước của chúng tôi cũng như mong muốn của khách hàng là giới thiệu những chiếc bánh ngon và lành nhất trong khả năng của mình.</p>
+                <img src="./images/1.jpg"/>
             </div>
         </article>
         <article class="sidebar">
             <div class="side">
-                <p>sidebar</p>
+
             </div>
         </article>
     </div>
