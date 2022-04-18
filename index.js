@@ -6,6 +6,8 @@ app.listen(port,function (){
     console.log("server is running...");
 });
 
+
+
 app.set("view engine","ejs");
 
 app.use(express.static("public"));
@@ -42,6 +44,7 @@ app.get("/gio-hang",function (req,res){
     res.render("cart");
 });
 
+
 app.get("/loc",function (req,res){
     res.render("filter");
 });
@@ -49,14 +52,3 @@ app.get("/loc",function (req,res){
 app.get("/thanh-toan",function (req,res){
     res.render("payment");
 });
-const $ = document.querySelector.bind(document)
-const header = $('.header .container')
-function scrollFunc() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        header.classList.add('scroll')
-    }
-    else {
-        header.classList.remove('scroll')
-    }
-}
-window.onscroll = scrollFunc
