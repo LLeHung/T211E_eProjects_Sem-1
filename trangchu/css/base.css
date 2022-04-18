@@ -75,7 +75,7 @@ html{
 
 
 .btn{
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;
@@ -88,6 +88,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1.5rem;
 }
 .btn.btn--normal:hover{
     background-color: rgba(0, 0, 0 ,0.05);
