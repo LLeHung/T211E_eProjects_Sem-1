@@ -53,7 +53,7 @@
 }
 .header__navbar-user-menu::before{
     content: "";
-    border-width: 25px 29px;
+    border-width: 25px 18px;
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
     position: absolute;
