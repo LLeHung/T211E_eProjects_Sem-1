@@ -5,19 +5,86 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sản Phẩm</title>
-    <%- include("stylesheet.ejs") %>
-    <link rel="stylesheet" href="">
+    <!-- Import Boostrap css, js, font -->
+    <meta charset="UTF-8">
+    <title>Cakeinfo1</title>
+    <!--Important link from https://bootsnipp.com/snippets/XqvZr-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="css/payment.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=EB+Garamond:wght@400;500;600&family=Poppins:wght@100;300;400;600&family=Raleway:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Product</title>
 </head>
 <body>
-<section class="col-md-12">
-    <div class="container">
-        <h1>Chi tiết sản phẩm</h1>
-        <h2><%= product.TenSp %></h2>
-        <p><%= product.MoTa %></p>
-        <p><%= product.DonVi %></p>
-        <p><%= product.Gia %></p>
+<div class="products">
+    <div class="content">
+        <div class="row">
+            <!---Logo va thanh vien-->
+            <div class="nav-logo">
+                <img src="images/Logo.jpg">
+            </div>
+            <!---Cac trang thanh phan-->
+            <div class="toplinks">
+                <ul>
+                    <li><a href="#">Homepage</a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Contact Us</a> </li>
+                    <li><a href="#">Map</a> </li>
+                </ul>
+            </div>
+            <!---Thanh Search-->
+            <div class="search" style="...">
+                <input style="height: 40px" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            </div>
+            <!--Khung noi dung-->
+            <div class="heading-section">
+                <h2>Product Details</h2>
+            </div>
+            <div class="picture">
+                <img src="images/1.png">
+            </div>
+            <!--Info-->
+            <div class="product-info">
+                <div class="product-name">Sesame Bread</div>
+            </div>
+            <div class="product-price-discount">
+                <span>$4.99</span>
+            </div>
+            <div class="producttext">
+                <p>Simit is a famous street food in EngLand. It's usually eaten plain or some would serve it with tomato, feta cheese and olives. It's eaten more as a savoury bread than sweet..</p>
+            </div>
+            <div class="count">
+                <div class="product-count">
+                    <label for="size">Quantity</label>
+                    <div class="count1">
+                        <form action="#" class="display-flex">
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyminus">-</div>
+                            <div class="qtyplus">+</div>
+                        </form>
+                        <a href="#" class="round-black-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+</div>
 </body>
 </html>
