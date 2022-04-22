@@ -16,11 +16,11 @@ app.get("/trang-chu",function (req,res){
     res.render("home");
 });
 
-app.get("/danh-muc",function (req,res){
+app.get("/san-pham",function (req,res){
     res.render("menu");
 });
 
-app.get("/san-pham",function (req,res){
+app.get("/chi-tiet",function (req,res){
     res.render("product");
 });
 
