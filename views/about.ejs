@@ -1,107 +1,90 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Giới Thiệu</title>
-    <%- include("stylesheet.ejs") %>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
-    <link rel="stylesheet" href="css/trangchu.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/view-cart.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
 <div class="app">
-    <header class="header">
-        <div class="grid">
-            <nav class="header__navbar">
-                <ul class="header__navbar-list">
-                    <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
-                        Sweet for life Bakery
-                        <div class="header__qr">
-                            <img src="./images/qrcode_bizweb.dktcdn.net.png" alt="QR code" class="header__qr-img">
-                            <div class="header__qr-apps">
-                                <a href="" class="header__qr-link">
-                                    <img src="./images/googleplay.png" alt="Google Play" class="header__qr-download-img">
-                                </a>
-                                <a href="" class="header__qr-link">
-                                    <img src="./images/appstore.png" alt="AppStore" class="header__qr-download-img">
-                                </a>
-                            </div>
-                        </div>
+    <header class="section header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/bakerfresh-logo-dark.svg" alt="" class="header__logo-img">
+                <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/bakerfresh-logo-white.svg" alt="" class="header__logo-img">
+            </div>
+            <!-- Navigation -->
+            <nav class="navbar">
+                <input hidden type="checkbox" name="" id="menu">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Home</a>
                     </li>
-                    <li class="header__navbar-item">
-                        <span class="header__navbar-title--no-poiter">Kết Nối</span>
-                        <a href="" class="header__navbar-icon-link">
-                            <i class="header__navbar-icon fab fa-facebook"></i>
-                        </a>
-                        <a href="" class="header__navbar-icon-link">
-                            <i class="header__navbar-icon fab fa-instagram"></i>
-                        </a>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Shop</a>
+                        <i class='bx bx-chevron-down'></i>
+                        <ul class="sub-nav__list">
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake Wedding</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake Birthday</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake X'mas & New Year</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake TIRAMISU</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake Tea Break</a>
+                            </li>
+                        </ul>
                     </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">About us</a>
+                        <i class='bx bx-chevron-down'></i>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                    </li>
+                    <label for="menu" class="menu-mobile-tablet">
+                        <i class='close-menu-icon bx bx-x'></i>
+                    </label>
                 </ul>
-                <ul class="header__navbar-list">
-                    <li class="header__navbar-item header__navbar-item--has-notify">
-                        <a href="" class="header__navbar-item-link">
-                            <i class="header__navbar-icon fa-solid fa-bell"></i>
-                            Thông Báo
-                        </a>
-                        <div class="header__notify">
-                            <header class="header__notify-header">
-                                <h3>Thông Báo Mới</h3>
-                            </header>
-                            <ul class="header__notify-list">
-                                <li class="header__notify-item .header__notify-item--view">
-                                    <a href="" class="header__notify-link">
-                                        <img src="./images/banh-sinh-nhat-dep.jpg" alt="" class="header__notify-img">
-                                        <div class="header__notify-info">
-                                            <span class="header__notify-name">Bánh Kem Hương Vị Vệt</span>
-                                            <span class="header__notify-desciotion">Mô Tả Bánh Kem Hương Vị Việt</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="header__notify-item">
-                                    <a href="" class="header__notify-link">
-                                        <img src="./images/banh-sinh-nhat-dep.jpg" alt="" class="header__notify-img">
-                                        <div class="header__notify-info">
-                                            <span class="header__notify-name">Bánh Kem Hương Vị Vệt</span>
-                                            <span class="header__notify-desciotion">Mô Tả Bánh Kem Hương Vị Việt</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="header__notify-item">
-                                    <a href="" class="header__notify-link">
-                                        <img src="./images/banh-sinh-nhat-dep.jpg" alt="" class="header__notify-img">
-                                        <div class="header__notify-info">
-                                            <span class="header__notify-name">Bánh Kem Hương Vị Vệt</span>
-                                            <span class="header__notify-desciotion">Mô Tả Bánh Kem Hương Vị Việt</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <footer class="header__notify--footer">
-                                <a href="" class="header__notify--footer-btn">Xem Tất Cả</a>
-                            </footer>
-                        </div>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <i class='bx bx-search'></i>
                     </li>
-                    <li class="header__navbar-item">
-                        <a href="" class="header__navbar-item-link">
-                            <i class="header__navbar-icon far fa-question-circle"></i>
-                            Trợ Giúp</a>
+                    <li class="navbar__item">
+                        <i class='bx bx-cart'></i>
                     </li>
-                    <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng Ký</li>
-                    <li class="header__navbar-item header__navbar-item--strong">Đăng Nhập</li>
+                    <li class="navbar__item">
+                        <i class='bx bx-user' ></i>
+                    </li>
+                    <li class="navbar__item">
+                        <label for="menu" class="menu-mobile-tablet">
+                            <i class='bx bx-menu'></i>
+                        </label>
+                    </li>
                 </ul>
             </nav>
         </div>
+        <div class="header__text">
+            <p class="header__title">Cart</p>
+            <p class="header__address">
+                <a href="#" class="header__home-link">Home</a>
+                <span class="header__target">/ Cart</span>
+            </p>
+        </div>
     </header>
-</div>
 
 <nav class="section navigator">
     <div class="container">
@@ -137,9 +120,110 @@
     </div>
 </section>
 <footer class="section footer">
-    <div class="container">
-        <p>footer</p>
+    <div class="grid wide">
+        <div class="row container">
+            <div class="col l-3 m-3 c-12 center-box-flex">
+                <div class="footer-socials">
+                    <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/bakerfresh-logo-white.svg" alt="" class="footer__logo">
+                    <ul class="socials-list">
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class='social-icon bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class='social-icon bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class='social-icon bx bxl-pinterest-alt' ></i>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#" class="social-link">
+                                <i class='social-icon bx bxl-instagram' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-3 m-3 c-12">
+                <div class="category">
+                    <p class="features-title">CATEGORIES</p>
+                    <ul class="features-list">
+                        <li class="features-item">
+                            <a href="#" class="features-link">Cupcake</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Pastry</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Muffin</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Waffle</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-3 m-3 c-12">
+                <div class="category">
+                    <p class="features-title">SERVICES</p>
+                    <ul class="features-list">
+                        <li class="features-item">
+                            <a href="#" class="features-link">Delivery</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Payment</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Returns</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-3 c-12">
+                <div class="category">
+                    <p class="features-title">INFORMATION</p>
+                    <ul class="features-list">
+                        <li class="features-item">
+                            <a href="#" class="features-link">About Us</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Contact Us</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Latest Post</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Selling Tips</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="componion-list">
+            <li class="compotion-item">
+                <i class='bx bxl-visa'></i>
+            </li>
+            <li class="compotion-item">
+                <i class='bx bxl-paypal' ></i>
+            </li>
+            <li class="compotion-item">
+                <i class='bx bxl-mastercard' ></i>
+            </li>
+            <li class="compotion-item">
+                <i class='bx bxl-visa'></i>
+            </li>
+        </ul>
+        <p class="footer__cpy-right">COPYRIGHT © LA-STUDIO. ALL RIGHTS RESERVED.</p>
     </div>
 </footer>
+</div>
 </body>
 </html>
