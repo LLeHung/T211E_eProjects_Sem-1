@@ -1,0 +1,146 @@
+.title{
+    margin-top: 50px;
+}
+.navbar{
+    color: #00aced;
+    background-color: black;
+}
+.navbar__item{
+    color: #00aced;
+    margin-left: 0px;
+}
+/* Content detail*/
+.container{
+    width: 850px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    float: none;
+    font-size: 15px;
+}
+.block{
+    float: left;
+    width: 100%;
+<!--border: 1px solid red;-->
+    background-color: white;
+    margin-bottom: 300px;
+    margin-top: 50px;
+    margin-left: 0px;
+    font-size: 15px;
+}
+.picture{
+    margin-left: -250px;
+    margin-top: -60px;
+    padding: 20px;
+}
+.name{
+    text-align: left;
+    font-size: 30px ;
+    margin-top: -280px;
+}
+.price{
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+.description{
+    text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+.count{
+    margin-left: 800px;
+    margin-top: -110px;
+}
+.count1{
+    margin-top: -20px;
+    margin-left: -800px;
+}
+.product-count .qtyminus,
+.product-count .qtyplus {
+    width: 34px;
+    height: 34px;
+    background: #212529;
+    text-align: center;
+    font-size: 19px;
+    line-height: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+.product-count .qtyminus {
+    border-radius: 10px 0 0 10px;
+    margin-left: 16px;
+    margin-top: -35px;
+}
+.product-count .qtyplus {
+    border-radius: 0 10px 10px 0;
+    margin-top: -35px;
+    margin-left: 140px;
+}
+.product-count .qty {
+    width: 70px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 40px;
+
+}
+.round-black-btn {
+    border-radius: 4px;
+    background: #212529;
+    color: #fff;
+    padding: 7px 45px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 0px;
+    border: solid 2px #212529;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+.round-black-btn:hover,
+.round-black-btn:focus {
+    background: transparent;
+    color: #212529;
+    text-decoration: none;
+}
+.quatity{
+    margin-left: -800px;
+    margin-top: 120px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+<!--REVIEW-->
+    .review-form{
+        border: 1px solid red;
+    }
+.form-group{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7a7a7a;
+    line-height: 24px;
+}
+.review-heading{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    color: #7a7a7a;
+    line-height: 24px;
+}
+/*footer*/
+.row-container{
+    float: left;
+    color: #00aced;
+    background-color: black;
+    list-style: none;
+    margin-top: -700px;
+    margin-left: 50px;
+}
+.cart-information{
+    margin-left: 10px;
+}
