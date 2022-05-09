@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    /*color: red;*/
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+.products{
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    font-size: 15px;
+}
+.content{
+    float: left;
+    width: 100%;
+<!-- border: 1px solid red; -->
+    margin-left: 400px;
+    background-color: white;
+    margin-bottom: 300px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.products1{
+    width: 2500px;
+    height: 2850px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+.content1{
+    float: left;
+    width: 100%;
+<!--border: 1px solid red;-->
+    background-color: white;
+    margin-bottom: 100px;
+}
+.products2{
+    width: 250px;
+    height: 200px;
+    float: none;
+}
+.content2{
+    float: left;
+    width: 100%;
+<!--border: 1px solid green;-->
+    background-color: white;
+    margin-left: 1700px;
+    margin-top: -3820px;
+}
+.header-text1{
+    margin-top: -20px;
+    margin-left: 10px;
+    font-family: .VnArial;
+    font-size: 18px;
+    text-align: left;
+}
+.header-text{
+    text-align: left;
+    font-family:.VnArial;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.row{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/*San pham Deal of the week*/
+.row1{
+    margin-top: 10px;
+}
+.item{
+    float: left;
+    width: 100%;
+    padding: 0 5px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+.item-box{
+    float: left;
+    width: 12.5%%;
+    border: 1px solid wheat;
+    margin: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#btn{
+    background: #55ACEE;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+#btn:hover{
+    background: #00aced;
+    cursor: pointer;
+    border: none;
+
+}
+.price-num{
+    font-size: 14px;
+    font-weight: 600;
+    color: #707070;
+}
+.name{
+    font-size: 14px;
+    font-weight: bold;
+    color: #707070;
+}
+.rectangle{
+    width: 1450px;
+    height: 50px;
+    background: darkgray;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-logo{
+    margin-left: 0px;
+}
+.text{
+    margin-left: 0px;
+}
+/*-Cac trang thanh phan*/
+.toplinks{
+    float: right;
+    /*border: 1px solid red;*/
+    margin-top: 35px;
+    font-size: 14px;
+}
+.toplinks ul{
+    float: right;
+}
+.toplinks ul li{
+    float: left;
+    list-style: none;
+    margin-left: 50px;
+}
+/*Thanh Search*/
+.search{
+    font-size: 20px;
+    margin-left: 270px;
+    margin-top: 30px;
+}
+/*ProductDetails*/
+.heading-section{
+    margin-top: 50px;
+    margin-left: 180px;
+}
+.picture{
+    margin-top: 100px;
+    margin-left: -250px;
+    width: 20%;
+}
+.product-info{
+    margin-top: 90px;
+    margin-left: 350px;
+    font-size: 30px;
+}
+.product-price-discount{
+    margin-top: 140px;
+    margin-left: -160px;
+}
+.producttext{
+    margin: auto;
+    width: 600px;
+    margin-top: 180px;
+    margin-left: -60px;
+}
+/*Product count*/
+.count{
+    margin-left: 800px;
+    margin-top: -110px;
+}
+.count1{
+    margin-top: -30px;
+}
+.product-count .qtyminus,
+.product-count .qtyplus {
+    width: 34px;
+    height: 34px;
+    background: #212529;
+    text-align: center;
+    font-size: 19px;
+    line-height: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+.product-count .qtyminus {
+    border-radius: 3px 0 0 3px;
+    margin-left: 16px;
+    margin-top: -35px;
+}
+.product-count .qtyplus {
+    border-radius: 0 3px 3px 0;
+    margin-top: -35px;
+    margin-left: 110px;
+}
+.product-count .qty {
+    width: 60px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+.round-black-btn {
+    border-radius: 4px;
+    background: #212529;
+    color: #fff;
+    padding: 7px 45px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: solid 2px #212529;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+.round-black-btn:hover,
+.round-black-btn:focus {
+    background: transparent;
+    color: #212529;
+    text-decoration: none;
+}
+.tag{
+    margin-left: -180px;
+    margin-top: 200px;
+    font-size: 18px;
+}
+.tag-list{
+    text-decoration-color: #00aced;
+    list-style: none;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.products3{
+    width: 350px;
+    height: 400px;
+    float: none;
+}
+.content3{
+    float: left;
+    width: 100%;
+    border: 1px solid gray;
+    background-color: lightgrey;
+    margin-left: 1900px;
+    margin-top: -3800px;
+}
+.header-text3{
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid lightgrey;
+
+}
+.macaron{
+    margin-top: 20px;
+    display:inline-block;
+    position:relative;
+    width:250px;
+    height:250px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
