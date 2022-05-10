@@ -53,10 +53,10 @@ body {
 
     .web-links a
     {
-       font-size: 14px;
+       font-size: 18px;
       font-family: 'Alegreya', serif;
       color: rgb(255, 255, 255);
-      text-transform: uppercase;  
+      /*text-transform: uppercase;  */
     }
     .web-links a:hover
     {
@@ -65,7 +65,8 @@ body {
     }
    .social-links
     {
-       margin:20px 05px 0px 5px; 
+       margin: 20px 10px 0 2px;
+       font-size: 2rem;
     }
     .social-links a 
         {
