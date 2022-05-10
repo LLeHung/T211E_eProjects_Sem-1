@@ -6,466 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product</title>
     <%- include("stylesheet.ejs") %>
-    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="product-details">
-    <div class="app">
-        <%- include("header.ejs") %>
+<!-- Navigation -->
+<div class="cart-detail">
+    <nav class="navbar">
+        <input hidden type="checkbox" name="" id="menu">
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">Shop</a>
+                <i class='bx bx-chevron-down'></i>
+                <ul class="sub-nav__list">
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Cupcake</a>
+                    </li>
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Donut</a>
+                    </li>
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Pastry</a>
+                    </li>
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Muffin</a>
+                    </li>
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Waffle</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">About us</a>
+                <i class='bx bx-chevron-down'></i>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item">
+            </li>
+            <label for="menu" class="menu-mobile-tablet">
+                <i class='close-menu-icon bx bx-x'></i>
+            </label>
+        </ul>
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <i class='bx bx-search'></i>
+            </li>
+            <li class="navbar__item">
+                <i class='bx bx-cart'></i>
+            </li>
+            <li class="navbar__item">
+                <i class='bx bx-user' ></i>
+            </li>
+            <li class="navbar__item">
+                <label for="menu" class="menu-mobile-tablet">
+                    <i class='bx bx-menu'></i>
+                </label>
+            </li>
+        </ul>
+    </nav>
+    <!--content detail-->
+    <div class="container">
+        <div class="block">
+            <div class="picture">
+                <img src="/img-product/Brownie.jpg" width="800" height="300">
+            </div>
+            <div class="block_detail">
+                <div class="name">
+                    <p>BROWNIE</p>
+                </div>
+                <div class="price">
+                    <p>$4.99</p>
+                </div>
+                <div class="description">
+                    <p>A delicious and decadent Brownie Cake made from scratch. This moist and tender cake is made using real chocolate and boasts a crackly, meringue-like crust.</p>
+                </div>
+            </div>
+            <!--Count-->
+            <div class="count">
+                <div class="product-count">
+                    <div class="quatity">
+                        <label for="size">Quantity</label>
+                    </div>
+                    <div class="count1">
+                        <form action="#" class="display-flex">
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyminus">-</div>
+                            <div class="qtyplus">+</div>
+                        </form>
+                        <a href="#" class="round-black-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!--REVIEW-->
+            <form class="review-form">
+                <div class="review-heading">REVIEWS</div>
+                <div class="form-group">
+                    <label>Your message</label>
+                    <textarea class="form-control" rows="10"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Name*">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Email Id*">
+                        </div>
+                    </div>
+                </div>
+                <button class="round-black-btn">Submit Review</button>
+            </form>
+        </div>
     </div>
-    <div class="products">
-        <div class="content">
-            <div class="row">
-                <div class="item">
-                    <div class="cake-wedding">
-                        <div class="header-text">
-                            <p>Cupcake</p>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/Brownie.jpg">
-                                <p>Brownie</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/Caramel.jpg">
-                                <p>Caramel</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/chocolate muffin.jpg">
-                                <p>Chocolate Muffin</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/chocolate muffin2.jpg">
-                                <p>Chocolate Muffin</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/chocolate muffin1.jpg">
-                                <p>Chocolate Muffin</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/chocolate white muffin.jpg">
-                                <p>Chocolate White Muffin</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/cream muffin.jpg">
-                                <p>Cream Muffin</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/croissant italian cake.jpg">
-                                <p>Croissant Italian Cake</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/croissant.jpg">
-                                <p>Croissant</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/crunchy.jpg">
-                                <p>Crunchy</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/crunchy.jpg">
-                                <p>Crunchy</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                        <div class="item-box">
-                            <a href="#">
-                                <img src="/img-product/donut.jpg">
-                                <p>Donut</p>
-                                <p>$4.99</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/frence bagel.jpg">
-                            <p>Frence Bagel</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/frence bagel1.jpg">
-                            <p>Frence Bagel</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/chocolate bake.jpg">
-                            <p>Chocolate bake</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/french bun.jpg">
-                            <p>French Bun</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/german chocolate.jpg">
-                            <p>German Chocolate</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/glutten loaf.jpg">
-                            <p>Glutten Loaf</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Macaron Cake.jpg">
-                            <p>Macaron Cake</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <img src="/img-product/Caramel.jpg">
-                        <p>Caramel</p>
-                        <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Pastry.jpg">
-                            <p>Pastry</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/poppy bagel.jpg">
-                            <p>Poppy Bagel</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/poppyroll.jpg">
-                            <p>Poppy roll</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/chocolate bake.jpg">
-                            <p>Chocolate Bake</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/pumkin buns.jpg">
-                            <p>Pumkin Buns</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/rasberry.jpg">
-                            <p>Rasberry</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/red bread.jpg">
-                            <p>Red Bread</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Red Velvet.jpg">
-                            <p>Red Velvet</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/rustic bread.jpg">
-                            <p>Rustic Bread</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/chocolate bake.jpg">
-                            <p>Chocolate bake</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/signature cake.jpg">
-                            <p>Signature Cake</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/square bun.jpg">
-                            <p>Square Bun</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/square bunq.jpg">
-                            <p>Square Bun</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Brownie.jpg">
-                            <p>Brownie</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Wheat loaf.jpg">
-                            <p>Wheat Loaf</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/chocolate bake.jpg">
-                            <p>Chocolate bake</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Brownie.jpg">
-                            <p>Brownie</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Caramel.jpg">
-                            <p>Caramel</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Macaron Cake.jpg">
-                            <p>Macaron Cake</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/Brownie.jpg">
-                            <p>Brownie</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/poppyroll.jpg">
-                            <p>Poppy roll</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
-                    <div class="item-box">
-                        <a href="#">
-                            <img src="/img-product/chocolate bake.jpg">
-                            <p>Chocolate bake</p>
-                            <p>$4.99</p>
-                        </a>
-                    </div>
+    <!--
+<footer class="footer">
+    <%- include("footer.ejs") %>
+</footer> -->
+    <div class="row-container">
+        <div class="col l-3 m-3 c-12">
+            <div class="category">
+                <p class="features-title">CATEGORIES</p>
+                <ul class="features-list">
+                    <li class="features-item">
+                        <a href="#" class="features-link">Cupcake</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Pastry</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Muffin</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Waffle</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col l-3 m-3 c-12">
+            <div class="category">
+                <p class="features-title">SERVICES</p>
+                <ul class="features-list">
+                    <li class="features-item">
+                        <a href="#" class="features-link">Delivery</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Payment</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Returns</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col l-3 c-12">
+            <div class="category">
+                <p class="features-title">INFORMATION</p>
+                <div class="cart-information">
+                    <ul class="features-list">
+                        <li class="features-item">
+                            <a href="#" class="features-link">About Us</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Contact Us</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Latest Post</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Selling Tips</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!--lam background tong-->
-    <div class="products1">
-        <div class="content1">
-
-        </div>
-    </div>
-    <!--lam Popular famous-->
-    <div class="products2">
-        <div class="content2">
-            <div class="header-text1">
-                <p>Popular famous</p>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/rustic bread.jpg">
-                    <p>Rustic Bread</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/chocolate bake.jpg">
-                    <p>Chocolate bake</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/signature cake.jpg">
-                    <p>Signature Cake</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/square bun.jpg">
-                    <p>Square Bun</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/square bunq.jpg">
-                    <p>Square Bun</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/Brownie.jpg">
-                    <p>Brownie</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/Wheat loaf.jpg">
-                    <p>Wheat Loaf</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/chocolate bake.jpg">
-                    <p>Chocolate bake</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/Brownie.jpg">
-                    <p>Brownie</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/Caramel.jpg">
-                    <p>Caramel</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <div class="item-box">
-                <a href="#">
-                    <img src="/img-product/Macaron Cake.jpg">
-                    <p>Macaron Cake</p>
-                    <p>$4.99</p>
-                </a>
-            </div>
-            <!--lam Tag-->
-            <div class="tag">
-                <p>Tag</p>
-            </div>
-            <!--lam Tag-list-->
-            <ul class="tag-list">
-                <li class=" tag__item ">
-                    <a href="#" >Cupcake</a>
-                </li>
-                <li class=" tag__item ">
-                    <a href="#" >Pastry</a>
-                <li class=" tag__item ">
-                    <a href="#" >Muffin</a>
-                </li>
-                <li class=" tag__item ">
-                    <a href="#" >Waffle</a>
-                </li>
-            </ul>
-            <!--lam anh hieu ung-->
-            <div class="macaron">
-                <div class="placeholder">
-                    <img src="/img-product/Macaron Cake1.jpg" width="200" height="200">
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    <!--lam Catergories-->
-    <div class="products3">
-        <div class="content3">
-            <div class="header-text3">
-                <p>Categories</p>
-            </div>
-            <ul class="tag-list">
-                <li class="tag__item">
-                    <a href="#" >Cupcake</a>
-                </li>
-                <li class=" tag__item ">
-                    <a href="#" >Donut</a>
-                </li>
-                <li class=" tag__item ">
-                    <a href="#" >Pastry</a>
-                <li class=" tag__item ">
-                    <a href="#" >Muffin</a>
-                </li>
-                <li class=" tag__item ">
-                    <a href="#" >Waffle</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <footer class="footer">
-        <%- include("footer.ejs") %>
-    </footer>
 </div>
 </div>
+</div>
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+        $(".qtyminus").on("click",function(){
+            var now = $(".qty").val();
+            if ($.isNumeric(now)){
+                if (parseInt(now) -1> 0)
+                { now--;}
+                $(".qty").val(now);
+            }
+        })
+        $(".qtyplus").on("click",function(){
+            var now = $(".qty").val();
+            if ($.isNumeric(now)){
+                $(".qty").val(parseInt(now)+1);
+            }
+        });
+    });
+
+</script>
+
 </body>
 </html>

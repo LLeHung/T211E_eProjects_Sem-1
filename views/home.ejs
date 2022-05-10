@@ -1,522 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <%- include("stylesheet.ejs") %>
-    <link rel="stylesheet" href="/css/trangchu.css">
-    <link rel="stylesheet" href="/css/base.css">
+
+    <title>Bakerfresh-Cake Shop</title>
+
+    <meta name="description" content="Clean & Minimal Website for a Bakery Shop.">
+    <meta name="keywords" content="Bakery, clean, minimal, blog, template, shop website">
+    <meta name="author" content="nK">
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
 </head>
 <body>
 
-<div class="app">
-    <%- include("header.ejs") %>
-    <div class="container">
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/n46.jpg?v=1636442041000);">
-                    <h5 class="home-product-item__name">Bánh kem sinh nhật hai tầng trắng hoa nâu công ty nhân viên tập thể</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">800.000</span>
-                        <span class="home-product-item__price-current">780.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 116 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">10%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/n44.jpg?v=1636442040000);">
-                    <h5 class="home-product-item__name">[BAK4230] Bánh kem sinh nhật 2 tầng màu hồng cắm nến happy birthday đám mây trắng cho nữ chị gái</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">800.000</span>
-                        <span class="home-product-item__price-current">780.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 116 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">10%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/n18.jpg?v=1636431334000);">
-                    <h5 class="home-product-item__name">[BAK4012] Bánh kem sinh nhật 2 tầng bé gái búp bê bắt hoa viền rực rỡ tươi sáng con gái nhỏ</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">800.000</span>
-                        <span class="home-product-item__price-current">780.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 116 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">10%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/banh-kem-dep-banhngotvn-19-min.jpg?v=1607761209000);">
-                    <h5 class="home-product-item__name">[BAK2277] Bánh kem sinh nhật 2 tầng hoa hồng lộng lẫy</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">800.000</span>
-                        <span class="home-product-item__price-current">780.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 116 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">10%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/banh-kem-dep-banhngotvn-18-min.jpg?v=1607761046000);">
-                    <h5 class="home-product-item__name">[BAK2278] Bánh kem sinh nhật hai tầng trắng vàng sang trọng quý phái</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">800.000</span>
-                        <span class="home-product-item__price-current">780.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 116 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">10%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/banh-kem-bac-ninh-1.jpg?v=1583915962000);">
-                    <h5 class="home-product-item__name">[BAK3236] Bánh kem 2 tầng tặng sếp đẹp sang trọng bắt hoa nhiều màu 8/3</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">800.000</span>
-                        <span class="home-product-item__price-current">780.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 116 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">10%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/combo-hoa-banh-cb-36.jpg?v=1649989805000);">
-                    <h5 class="home-product-item__name">Combo hoa bánh CB36 bánh bắp rải hạnh nhân và nhiều cherry ngâm</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">950.000</span>
-                        <span class="home-product-item__price-current">899.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 67 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">5%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/combo-hoa-banh-cb-34.jpg?v=1649989804000);">
-                    <h5 class="home-product-item__name">Combo hoa bánh CB34 trái tim cắm phụ kiện vàng sang trọng quý phái</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">1.500.000</span>
-                        <span class="home-product-item__price-current">1.399.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 45 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">7%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/combo-hoa-banh-cb-29.jpg?v=1649989801000);">
-                    <h5 class="home-product-item__name">Combo hoa bánh CB34 trái tim cắm phụ kiện vàng sang trọng quý phái</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">950.000</span>
-                        <span class="home-product-item__price-current">899.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 178 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">5%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-        <div class="grid__column-2-4">
-            <a class="home-product-item" href="">
-                <div class="home-product__img" style="background-image: url(https://bizweb.dktcdn.net/thumb/medium/100/333/744/products/combo-hoa-banh-cb-11.jpg?v=1649989725000);">
-                    <h5 class="home-product-item__name">Combo hoa bánh CB11 tròn trắng hiện đại kiểu mới nhất</h5>
-                    <div class="home-product-item__price">
-                        <span class="home-product-item__price-old">800.000</span>
-                        <span class="home-product-item__price-current">749.000</span>
-                    </div>
-                    <div class="home-product-item__action">
-                                              <span class="home-product-item__like home-product-item__like--liked">
-                                                  <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                  <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                              </span>
-                        <div class="home-product-item__rating">
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="home-product-item__star-gold far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <span class="home-product-item__sold"> 169 đã bán</span>
-                    </div>
-                </div>
-                <div class="home-product-item__origin">
-                    <span class="home-product-item__brand">Cheesecake</span>
-                    <span class="home-product-item__origin-name">Vietnam</span>
-                </div>
-                <div class="home-product-item__favourite">
-                    <i class="fas fa-check"></i>
-                    <span>Yêu Thích</span>
-                </div>
-                <div class="home-product-item__sale-off">
-                    <span class="home-product-item__sale-off-percent">6%</span>
-                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<ul class="pagination home-product__pagination">
-    <li class="pagination-item">
-        <a href="" class="pagination-item__link">
-            <i class="pagination-item__icon fas fa-angle-left"></i>
-        </a>
-    </li>
-    <li class="pagination-item pagination-item--action">
-        <a href="" class="pagination-item__link">1</a>
-    </li>
-    <li class="pagination-item">
-        <a href="" class="pagination-item__link">2</a>
-    </li>
-    <li class="pagination-item">
-        <a href="" class="pagination-item__link">3</a>
-    </li>
-    <li class="pagination-item">
-        <a href="" class="pagination-item__link">4</a>
-    </li>
-    <li class="pagination-item">
-        <a href="" class="pagination-item__link">5</a>
-    </li>
-    <li class="pagination-item">
-        <a href="" class="pagination-item__link">...</a>
-    </li>
-    <li class="pagination-item">
-        <a href="" class="pagination-item__link">20+</a>
-    </li>
-    <li class="pagination-item">
-        <a href="" class="pagination-item__link">
-            <i class="pagination-item__icon fas fa-angle-right"></i>
-        </a>
-    </li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-    </div>
-    <footer class="footer">
-        <%- include("footer.ejs") %>
-    </footer>
-</div>
-<!--<div class="modal">
-    <div class="modal_overlay"></div>
-    <div class="modal__body">
-         <div class="auth-form">
-             <div class="auth-form__container">
-                 <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng Ký</h3>
-                        <span class="auth-form__switch-btn">Đăng Nhập</span>
-                    </div>
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Nhập email">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập Mật Khẩu">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập Lại Mật Khẩu">
-                        </div>
-                    </div>
-                    <div class="auth-form__aside">
-                        <p class="auth-form_polic-text">
-                            Bạn đã đồng ý đăng ký?
-                            <a href="" class="auth-form_text-link">Điều Khoản Dịch Vụ</a> &
-                            <a href="" class="auth-form_text-link">Chính Sách Và Bảo Mật</a>
-                        </p>
-                    </div>
-                    <div class="auth-form__controls">
-                        <button class="btn btn--normal auth-form__controls-back">Trở Lại</button>
-                        <button class="btn btn--pir">Đăng Ký</button>
-                    </div>
-                </div>
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">
-                            Kết Nối Với FaceBook
-                        </span>
-                    </a>
-                    <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">
-                            Kết Nối Với Google
-                        </span>
-                    </a>
-             </div>
-         </div>-->
-<!--<div class="auth-form">
-    <div class="auth-form__container">
-        <div class="auth-form__header">
-            <h3 class="auth-form__heading">Đăng Nhập</h3>
-            <span class="auth-form__switch-btn">Đăng Ký</span>
-        </div>
-        <div class="auth-form__form">
-            <div class="auth-form__group">
-                <input type="text" class="auth-form__input" placeholder="Nhập email">
+<header class="header-bg">
+    <nav class="navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </button>
+                <div class="logo"><a class="navbar-brand" href="/trang-chu">Bakerbesh</a></div>
             </div>
-            <div class="auth-form__group">
-                <input type="password" class="auth-form__input" placeholder="Nhập Mật Khẩu">
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nk-navbar navbar-nav navbar-left">
+                    <li class="web-links"><a class="nav-link" href="/trang-chu">Home</a></li>
+                    <li class="web-links"><a class="nav-link" href="/san-pham">Menu</a></li>
+                    <li class="web-links"><a class="nav-link" href="#reservations">Pages</a></li>
+                    <li class="web-links"><a class="nav-link" href="#news">Contact</a></li>
+                    <li class="web-links"><a class="nav-link" href="#contact">Blog</a></li>
+                </ul>
+                <ul class="nk-navbar navbar-right">
+                    <li class="social-links"><a href=""><i class="fa fa-search fa-1x"></i></a></li>
+                    <li class="social-links"><a href=""><i class="fa fas fa-shopping-cart fa-1x"></i></a></li>
+                    <li class="social-links"><a href=""><i class="fa fa-user fa-1x"></i></a></li>
+                </ul>
             </div>
         </div>
-        <div class="auth-form__aside">
-            <div class="auth-form__help">
-                <a href="" class="auth-form__help-link auth-form__help-for">Quên Mật Khẩu</a>
-                <span class="auth-form__help-separete"></span>
-                <a href="" class="auth-form__help-link">Cần Trợ Giúp?</a>
+    </nav>
+    <div class=" col-xs-12 header-content">
+        <p class="main-text">Bring The Best <br>Experience</p>
+        <hr>
+        <p class="disc-text">We’re bringing you fresh ingredients every<br>day in ways you can’t resist.</p>
+        <button class="menu-btn"><a href="/san-pham">ORDER NOW</a></button>
+    </div>
+</header>
+
+<section id="about">
+    <div class="row">
+        <div class="container">
+            <div class="about-content col-md-5">
+                <h2 class="title text-center">Art Of Cakes</h2>
+                <p class="tagline text-center">we create delicious memories</p>
+                <p class="para text-center">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+                <h3 class="chef text-center">Chef Cook</h3>
+                <p class="cook text-center"><span class="fname">Benito</span><img src="images/cook.png" alt=""> <span class="lname">Gaspare</span></p>
+                <p class="quote text-center">Unique creations for unique<br>
+                    occasions.</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive about-img" src="images/bakery_stuff.jpg" alt="">
             </div>
         </div>
-        <div class="auth-form__controls">
-            <button class="btn btn--normal auth-form__controls-back">Trở Lại</button>
-            <button class="btn btn--pir">Đăng Nhập</button>
+
+    </div>
+</section>
+<section id="news">
+    <div class="row">
+        <div class="container">
+            <div class="col-xs-12 col-md-6 hidden-xs hidden-sm hidden-md news-img">
+                <img class="" src="images/news-placeholder-img.jpg" alt="">
+            </div>
+            <div class="col-xs-8 col-md-3 col-xs-offset-1 news-content">
+                <h2 class="title">Tasty pancakes</h2>
+                <p class="tagline">season favourite</p>
+                <p class="para">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+            </div>
+            <div class="col-md-1 text-center"> <img class="news-box" src="images/news-placeholder-box.jpg" alt=""> </div>
         </div>
     </div>
-    <div class="auth-form__socials">
-        <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon">
-            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-            <span class="auth-form__socials-title">
-                FaceBook
-                </span>
-        </a>
-        <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon">
-            <i class="auth-form__socials-icon fab fa-google"></i>
-            <span class="auth-form__socials-title">
-                Google
-                </span>
-        </a>
+</section>
+<section id="reservations">
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <div class="reserv-details text-center"><p class="heading1">Breakfast</p>
+                <p class="para1">7am Breakfast? we’re open!</p></div>
+            <div class="reserv-details text-center"><p class="heading2">Full breakfast</p><p class="para2">Duis ut tortor, et risus, vulputate pretium</p><p class="price">$12.49</p></div>
+            <div class="reserv-details text-center"><p class="heading2">Toast & Jam</p>
+                <p class="para2">Suspendisse, tempus, nterdum</p><p class="price">$4.90</p></div>
+            <div class="reserv-details text-center"><p class="heading2">Muffins</p><p class="para2">Fusce eget dui sodales est</p>
+                <p class="price">$3.95</p></div>
+        </div>
+        <div class="bakery-post col-md-4 col-xs-10">
+            <p class="title text-center">Your morning
+                Escape with Flair</p>
+            <p class="para text-center">Donec vitae sapien ut libero venenatis faucibus.
+                Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.<br>
+                <button class="read-btn"><a href="">READ</a></button></p>
+        </div>
     </div>
-</div>
-</div>
-</div>-->
+</section>
+<section id="menu">
+    <div class="col-xs-12">
+        <p class="title text-center">The Jibarito sandwich</p>
+        <p class="tagline text-center">the best sandwich you’ve ever tasted!</p>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="col-md-3 col-xs-12 menu-dishes">
+                <div class="menu-dish text-center"><img src="images/menu-img-1.png" alt="">
+                    <p class="dish-heading">Class aptent</p>
+                    <p class="dish-para">Quot alienum persecuti ut eam, nam ad
+                        atqui primis nusquam.</p>
+                </div>
+                <div class="menu-dish text-center"><img src="images/mages/menu-img-2.png" alt="">
+                    <p class="dish-heading">Nulla eget</p>
+                    <p class="dish-para">Nullam dictum felis eu pede mollis
+                        pretium Integer tincidunt.</p>
+                </div>
+                <div class="menu-dish text-center"><img src="images/menu-img-3.png" alt="">
+                    <p class="dish-heading">Sed nibh purus</p>
+                    <p class="dish-para"> Aenean eleifend tellus leo ligula,
+                        porttitor eu, consequat vitae.</p>
+                </div>
+            </div>
+            <div class="col-md-5 col-xs-12 menu-img col-md-offset-1 text-center">
+                <img class="hidden-xs hidden-sm" src="images/menu-img_bg.jpg" alt="" width="750px" />
+                <button class="recipe-btn col-md-4">FULL RECIPE</button>
+            </div>
+            <div class="menu-bar col-md-3 col-xs-12">
+                <div class="menu-box1 menu-box2"><p>PREP <br> <span class="num">15</span> <br> mins</p></div>
+                <div class="menu-box2"><p>cook <br> <span class="num">35</span> <br> mins</p></div>
+                <div class="menu-box3"><p>ready in <br> <span class="num">50</span> <br> mins</p></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <ul class="nk-navbar fnav">
+        <li class="flinks col-xs-12 col-md-2">
+            <a href="">
+                our menu
+            </a>
+        </li>
+        <li class="flinks col-xs-12 col-md-2"><a href="">gallery</a></li>
+        <li class="flinks col-xs-12 col-md-2"><a href="">culture</a></li>
+        <li class="flinks col-xs-12 col-md-2"><a href="">events</a></li>
+        <li class="flinks col-xs-12 col-md-2"><a href="">catering</a></li>
+        <li class="flinks col-xs-12 col-md-2"><a href="">visit us</a></li>
+    </ul>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

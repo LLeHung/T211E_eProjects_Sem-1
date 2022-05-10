@@ -4,219 +4,283 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product</title>
-    <%- include("stylesheet.ejs") %>
-    <link rel="stylesheet" href="/css/cart.css">
-    <link rel="stylesheet" href="/css/products.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Cart</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/view-cart.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 </head>
 <body>
-<!-- Navigation -->
-<div class="cart-detail">
-    <nav class="navbar">
-        <input hidden type="checkbox" name="" id="menu">
-        <ul class="navbar__list">
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Home</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Shop</a>
-                <i class='bx bx-chevron-down'></i>
-                <ul class="sub-nav__list">
-                    <li class="sub-nav__item">
-                        <a href="#" class="sub-nav__link">Cupcake</a>
+<div class="app">
+    <header class="section header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/bakerfresh-logo-dark.svg" alt="" class="header__logo-img">
+                <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/bakerfresh-logo-white.svg" alt="" class="header__logo-img">
+            </div>
+            <!-- Navigation -->
+            <nav class="navbar">
+                <input hidden type="checkbox" name="" id="menu">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Home</a>
                     </li>
-                    <li class="sub-nav__item">
-                        <a href="#" class="sub-nav__link">Donut</a>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Shop</a>
+                        <i class='bx bx-chevron-down'></i>
+                        <ul class="sub-nav__list">
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake Wedding</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake Birthday</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake X'mas & New Year</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake TIRAMISU</a>
+                            </li>
+                            <li class="sub-nav__item">
+                                <a href="#" class="sub-nav__link">Cake Tea Break</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="sub-nav__item">
-                        <a href="#" class="sub-nav__link">Pastry</a>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">About us</a>
+                        <i class='bx bx-chevron-down'></i>
                     </li>
-                    <li class="sub-nav__item">
-                        <a href="#" class="sub-nav__link">Muffin</a>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Contact</a>
                     </li>
-                    <li class="sub-nav__item">
-                        <a href="#" class="sub-nav__link">Waffle</a>
+                    <li class="navbar__item">
+                    </li><label for="menu" class="menu-mobile-tablet">
+                        <i class='close-menu-icon bx bx-x'></i>
+                    </label>
+                </ul>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <i class='bx bx-search'></i>
+                    </li>
+                    <li class="navbar__item">
+                        <i class='bx bx-cart'></i>
+                    </li>
+                    <li class="navbar__item">
+                        <i class='bx bx-user' ></i>
+                    </li>
+                    <li class="navbar__item">
+                        <label for="menu" class="menu-mobile-tablet">
+                            <i class='bx bx-menu'></i>
+                        </label>
                     </li>
                 </ul>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">About us</a>
-                <i class='bx bx-chevron-down'></i>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Contact</a>
-            </li>
-            <li class="navbar__item">
-            </li>
-            <label for="menu" class="menu-mobile-tablet">
-                <i class='close-menu-icon bx bx-x'></i>
-            </label>
-        </ul>
-        <ul class="navbar__list">
-            <li class="navbar__item">
-                <i class='bx bx-search'></i>
-            </li>
-            <li class="navbar__item">
-                <i class='bx bx-cart'></i>
-            </li>
-            <li class="navbar__item">
-                <i class='bx bx-user' ></i>
-            </li>
-            <li class="navbar__item">
-                <label for="menu" class="menu-mobile-tablet">
-                    <i class='bx bx-menu'></i>
-                </label>
-            </li>
-        </ul>
-    </nav>
-    <!--content detail-->
-    <div class="container">
-        <div class="block">
-            <div class="picture">
-                <img src="/img-product/Brownie.jpg" width="800" height="300">
-            </div>
-            <div class="block_detail">
-                <div class="name">
-                    <p>BROWNIE</p>
-                </div>
-                <div class="price">
-                    <p>$4.99</p>
-                </div>
-                <div class="description">
-                    <p>A delicious and decadent Brownie Cake made from scratch. This moist and tender cake is made using real chocolate and boasts a crackly, meringue-like crust.</p>
-                </div>
-            </div>
-            <!--Count-->
-            <div class="count">
-                <div class="product-count">
-                    <div class="quatity">
-                        <label for="size">Quantity</label>
-                    </div>
-                    <div class="count1">
-                        <form action="#" class="display-flex">
-                            <input type="text" name="quantity" value="1" class="qty">
-                            <div class="qtyminus">-</div>
-                            <div class="qtyplus">+</div>
-                        </form>
-                        <a href="#" class="round-black-btn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <!--REVIEW-->
-            <form class="review-form">
-                <div class="review-heading">REVIEWS</div>
-                <div class="form-group">
-                    <label>Your message</label>
-                    <textarea class="form-control" rows="10"></textarea>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Name*">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Email Id*">
-                        </div>
-                    </div>
-                </div>
-                <button class="round-black-btn">Submit Review</button>
-            </form>
+            </nav>
         </div>
-    </div>
-    <!--
-<footer class="footer">
-    <%- include("footer.ejs") %>
-</footer> -->
-    <div class="row-container">
-        <div class="col l-3 m-3 c-12">
-            <div class="category">
-                <p class="features-title">CATEGORIES</p>
-                <ul class="features-list">
-                    <li class="features-item">
-                        <a href="#" class="features-link">Cupcake</a>
-                    </li>
-                    <li class="features-item">
-                        <a href="#" class="features-link">Pastry</a>
-                    </li>
-                    <li class="features-item">
-                        <a href="#" class="features-link">Muffin</a>
-                    </li>
-                    <li class="features-item">
-                        <a href="#" class="features-link">Waffle</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="header__text">
+            <p class="header__title">Cart</p>
+            <p class="header__address">
+                <a href="#" class="header__home-link">Home</a>
+                <span class="header__target">/ Cart</span>
+            </p>
         </div>
-        <div class="col l-3 m-3 c-12">
-            <div class="category">
-                <p class="features-title">SERVICES</p>
-                <ul class="features-list">
-                    <li class="features-item">
-                        <a href="#" class="features-link">Delivery</a>
-                    </li>
-                    <li class="features-item">
-                        <a href="#" class="features-link">Payment</a>
-                    </li>
-                    <li class="features-item">
-                        <a href="#" class="features-link">Returns</a>
-                    </li>
-                    <li class="features-item">
-                        <a href="#" class="features-link">Privacy</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col l-3 c-12">
-            <div class="category">
-                <p class="features-title">INFORMATION</p>
-                <div class="cart-information">
-                    <ul class="features-list">
-                        <li class="features-item">
-                            <a href="#" class="features-link">About Us</a>
-                        </li>
-                        <li class="features-item">
-                            <a href="#" class="features-link">Contact Us</a>
-                        </li>
-                        <li class="features-item">
-                            <a href="#" class="features-link">Latest Post</a>
-                        </li>
-                        <li class="features-item">
-                            <a href="#" class="features-link">Selling Tips</a>
-                        </li>
-                    </ul>
+    </header>
+    <section class="section main">
+        <div class="grid wide">
+            <div class="row container">
+                <div class="col l-8 m-12 c-12">
+                    <table class="product hide-on-mobile">
+                        <thead>
+                        <tr>
+                            <th class="product-remove">&nbsp;</th>
+                            <th class="product-thumbnail">&nbsp;</th>
+                            <th class="product-name">Product</th>
+                            <th class="product-price">Price</th>
+                            <th class="product-quantity">Quantity</th>
+                            <th class="product-subtotal">Subtotal</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- Product item -->
+                        <tr>
+                            <td class="product-remove">
+                                <i class='product__remove-icon bx bx-x'></i>
+                            </td>
+                            <td class="product-thumbnail">
+                                <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/m2-prod6-600x750.jpg" alt="">
+                            </td>
+                            <td class="product-name">Sesame Bread</td>
+                            <td class="product-price">$4.99</td>
+                            <td class="product-quantity">
+                                <i class='bx bx-minus'></i>
+                                <span>1</span>
+                                <i class='bx bx-plus'></i>
+                            </td>
+                            <td class="product-subtotal">$4.99</td>
+                        </tr>
+                        <tr>
+                            <td class="product-remove">
+                                <i class='product__remove-icon bx bx-x'></i>
+                            </td>
+                            <td class="product-thumbnail">
+                                <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/m2-prod6-600x750.jpg" alt="">
+                            </td>
+                            <td class="product-name">Sesame Bread</td>
+                            <td class="product-price">$4.99</td>
+                            <td class="product-quantity">
+                                <i class='bx bx-minus'></i>
+                                <span>1</span>
+                                <i class='bx bx-plus'></i>
+                            </td>
+                            <td class="product-subtotal">$4.99</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="product-mobile">
+                        <ul class="product-mobile-list">
+                            <li class="product-mobile-item">
+                                <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/m2-prod6.jpg" alt="" class="product-mobile-img">
+                                <div class="product-mobile-info">
+                                    <p class="product-mobile-name">Sesame Bread</p>
+                                    <p class="product-mobile-quantity">Quantity: 1</p>
+                                    <p class="product-mobile-subtotal">Subtotal: $4.99</p>
+                                </div>
+                                <i class='bx bx-x'></i>
+                            </li>
+                            <li class="product-mobile-item">
+                                <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/m2-prod6.jpg" alt="" class="product-mobile-img">
+                                <div class="product-mobile-info">
+                                    <p class="product-mobile-name">Sesame Bread</p>
+                                    <p class="product-mobile-quantity">Quantity: 1</p>
+                                    <p class="product-mobile-subtotal">Subtotal: $4.99</p>
+                                </div>
+                                <i class='bx bx-x'></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-4 m-12 c-12">
+                    <div class="cart-proceed">
+                        <h3 class="cart-proceed__title">Cart totals</h3>
+                        <p class="cart-proceed__sub-total">
+                            <span>Subtotal</span>
+                            <span>$9.98</span>
+                        </p>
+                        <p class="cart-proceed__total">
+                            <span>Total</span>
+                            <span>$9.98</span>
+                        </p>
+                        <a href="#" class="cart-proceed__btn">PROCEED TO CHECKOUT</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <footer class="section footer">
+        <div class="grid wide">
+            <div class="row container">
+                <div class="col l-3 m-3 c-12 center-box-flex">
+                    <div class="footer-socials">
+                        <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/bakerfresh-logo-white.svg" alt="" class="footer__logo">
+                        <ul class="socials-list">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class='social-icon bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class='social-icon bx bxl-twitter'></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class='social-icon bx bxl-pinterest-alt' ></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class='social-icon bx bxl-instagram' ></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3 m-3 c-12">
+                    <div class="category">
+                        <p class="features-title">CATEGORIES</p>
+                        <ul class="features-list">
+                            <li class="features-item">
+                                <a href="#" class="features-link">Cupcake</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Pastry</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Muffin</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Waffle</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3 m-3 c-12">
+                    <div class="category">
+                        <p class="features-title">SERVICES</p>
+                        <ul class="features-list">
+                            <li class="features-item">
+                                <a href="#" class="features-link">Delivery</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Payment</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Returns</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3 c-12">
+                    <div class="category">
+                        <p class="features-title">INFORMATION</p>
+                        <ul class="features-list">
+                            <li class="features-item">
+                                <a href="#" class="features-link">About Us</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Contact Us</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Latest Post</a>
+                            </li>
+                            <li class="features-item">
+                                <a href="#" class="features-link">Selling Tips</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="componion-list">
+                <li class="compotion-item">
+                    <i class='bx bxl-visa'></i>
+                </li>
+                <li class="compotion-item">
+                    <i class='bx bxl-paypal' ></i>
+                </li>
+                <li class="compotion-item">
+                    <i class='bx bxl-mastercard' ></i>
+                </li>
+                <li class="compotion-item">
+                    <i class='bx bxl-visa'></i>
+                </li>
+            </ul>
+            <p class="footer__cpy-right">COPYRIGHT © LA-STUDIO. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
 </div>
-</div>
-</div>
-<script type="text/javascript">
-
-
-    $(document).ready(function() {
-        $(".qtyminus").on("click",function(){
-            var now = $(".qty").val();
-            if ($.isNumeric(now)){
-                if (parseInt(now) -1> 0)
-                { now--;}
-                $(".qty").val(now);
-            }
-        })
-        $(".qtyplus").on("click",function(){
-            var now = $(".qty").val();
-            if ($.isNumeric(now)){
-                $(".qty").val(parseInt(now)+1);
-            }
-        });
-    });
-
-</script>
-
+<script src="./main.js"></script>
 </body>
 </html>
