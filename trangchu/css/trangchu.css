@@ -11,7 +11,7 @@ body{
 }
 .header__navbar{
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 .header__navbar-list{
     list-style: none;
@@ -942,9 +942,9 @@ i.home-product-item__like-icon-fill{
 }
 .home-product-item__rating{
     font-size: 0.7rem;
-   /* transform: scale(0.7);
-    transform-origin: right;
-    color: #d5d5d5;*/
+    /* transform: scale(0.7);
+     transform-origin: right;
+     color: #d5d5d5;*/
     margin: -1px 0 0 auto;
 }
 .home-product-item__star-gold{
@@ -1099,4 +1099,3 @@ i.home-product-item__like-icon-fill{
     text-align: center;
     font-size: 1.4rem;
 }
-
