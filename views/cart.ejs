@@ -4,92 +4,219 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>product</title>
+    <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<header class="section header">
-    <div class="container">
-        <!-- No product : cart--no-product -->
-        <!-- Have product: cart--have-product -->
-        <div class="cart cart--have-product">
-            <p class="cart__title">My Cart</p>
-            <!-- No Products -->
-            <p class="cart__text">No products in the cart.</p>
-            <!-- Have Products -->
-            <div class="product">
-                <ul class="product__list">
-                    <li class="product__item">
-                        <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/m2-prod6.jpg" alt="" class="product__img">
-                        <div class="product__info">
-                            <h3 class="product__name">Sesame Bread</h3>
-                            <p class="product__price">1 x $4.99</p>
-                        </div>
-                        <div class="product__remove">
-                            <i class='product__remove-icon bx bx-x'></i>
-                        </div>
+<!-- Navigation -->
+<div class="cart-detail">
+    <nav class="navbar">
+        <input hidden type="checkbox" name="" id="menu">
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">Shop</a>
+                <i class='bx bx-chevron-down'></i>
+                <ul class="sub-nav__list">
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Cupcake</a>
                     </li>
-                    <li class="product__item">
-                        <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/m2-prod6.jpg" alt="" class="product__img">
-                        <div class="product__info">
-                            <h3 class="product__name">Sesame Bread</h3>
-                            <p class="product__price">1 x $4.99</p>
-                        </div>
-                        <div class="product__remove">
-                            <i class='product__remove-icon bx bx-x'></i>
-                        </div>
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Donut</a>
                     </li>
-                    <li class="product__item">
-                        <img src="https://baker.la-studioweb.com/wp-content/uploads/2021/08/m2-prod6.jpg" alt="" class="product__img">
-                        <div class="product__info">
-                            <h3 class="product__name">Sesame Bread</h3>
-                            <p class="product__price">1 x $4.99</p>
-                        </div>
-                        <div class="product__remove">
-                            <i class='product__remove-icon bx bx-x'></i>
-                        </div>
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Pastry</a>
+                    </li>
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Muffin</a>
+                    </li>
+                    <li class="sub-nav__item">
+                        <a href="#" class="sub-nav__link">Waffle</a>
                     </li>
                 </ul>
-                <p class="cart__total-price">
-                    Subtotal:
-                    <span>$4.99</span>
-                </p>
-                <!-- 2 Buttons -->
-                <div class="cart__options">
-                    <a href="./ShopCart/view-cart.html" target="blank" class="btn view-btn">View cart</a>
-                    <a href="#" class="btn check-out-btn">Checkout</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">About us</a>
+                <i class='bx bx-chevron-down'></i>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item">
+            </li>
+            <label for="menu" class="menu-mobile-tablet">
+                <i class='close-menu-icon bx bx-x'></i>
+            </label>
+        </ul>
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <i class='bx bx-search'></i>
+            </li>
+            <li class="navbar__item">
+                <i class='bx bx-cart'></i>
+            </li>
+            <li class="navbar__item">
+                <i class='bx bx-user' ></i>
+            </li>
+            <li class="navbar__item">
+                <label for="menu" class="menu-mobile-tablet">
+                    <i class='bx bx-menu'></i>
+                </label>
+            </li>
+        </ul>
+    </nav>
+    <!--content detail-->
+    <div class="container">
+        <div class="block">
+            <div class="picture">
+                <img src="/img-product/Brownie.jpg" width="800" height="300">
+            </div>
+            <div class="block_detail">
+                <div class="name">
+                    <p>BROWNIE</p>
+                </div>
+                <div class="price">
+                    <p>$4.99</p>
+                </div>
+                <div class="description">
+                    <p>A delicious and decadent Brownie Cake made from scratch. This moist and tender cake is made using real chocolate and boasts a crackly, meringue-like crust.</p>
                 </div>
             </div>
-            <div class="cart__close-btn">
-                <i class='cart__close-icon bx bx-x'></i>
+            <!--Count-->
+            <div class="count">
+                <div class="product-count">
+                    <div class="quatity">
+                        <label for="size">Quantity</label>
+                    </div>
+                    <div class="count1">
+                        <form action="#" class="display-flex">
+                            <input type="text" name="quantity" value="1" class="qty">
+                            <div class="qtyminus">-</div>
+                            <div class="qtyplus">+</div>
+                        </form>
+                        <a href="#" class="round-black-btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!--REVIEW-->
+            <form class="review-form">
+                <div class="review-heading">REVIEWS</div>
+                <div class="form-group">
+                    <label>Your message</label>
+                    <textarea class="form-control" rows="10"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Name*">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Email Id*">
+                        </div>
+                    </div>
+                </div>
+                <button class="round-black-btn">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    <!--
+<footer class="footer">
+    <%- include("footer.ejs") %>
+</footer> -->
+    <div class="row-container">
+        <div class="col l-3 m-3 c-12">
+            <div class="category">
+                <p class="features-title">CATEGORIES</p>
+                <ul class="features-list">
+                    <li class="features-item">
+                        <a href="#" class="features-link">Cupcake</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Pastry</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Muffin</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Waffle</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col l-3 m-3 c-12">
+            <div class="category">
+                <p class="features-title">SERVICES</p>
+                <ul class="features-list">
+                    <li class="features-item">
+                        <a href="#" class="features-link">Delivery</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Payment</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Returns</a>
+                    </li>
+                    <li class="features-item">
+                        <a href="#" class="features-link">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col l-3 c-12">
+            <div class="category">
+                <p class="features-title">INFORMATION</p>
+                <div class="cart-information">
+                    <ul class="features-list">
+                        <li class="features-item">
+                            <a href="#" class="features-link">About Us</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Contact Us</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Latest Post</a>
+                        </li>
+                        <li class="features-item">
+                            <a href="#" class="features-link">Selling Tips</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</header>
-<nav class="section navigator">
-    <div class="container">
-        nav
-    </div>
-</nav>
-<section class="section main">
-    <div class="container">
-        <article class="content">
-            <div class="entry">
-                <p>content</p>
-            </div>
-        </article>
-        <article class="sidebar">
-            <div class="side">
-                <p>side bar</p>
-            </div>
-        </article>
-    </div>
-</section>
-<footer class="section footer">
-    <div class="container">
-        <p>footer</p>
-    </div>
-</footer>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+
+    $(document).ready(function() {
+        $(".qtyminus").on("click",function(){
+            var now = $(".qty").val();
+            if ($.isNumeric(now)){
+                if (parseInt(now) -1> 0)
+                { now--;}
+                $(".qty").val(now);
+            }
+        })
+        $(".qtyplus").on("click",function(){
+            var now = $(".qty").val();
+            if ($.isNumeric(now)){
+                $(".qty").val(parseInt(now)+1);
+            }
+        });
+    });
+
+</script>
+
 </body>
 </html>

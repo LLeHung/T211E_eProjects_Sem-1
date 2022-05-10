@@ -23,7 +23,7 @@ img{
 .content{
     float: left;
     width: 100%;
-    <!-- border: 1px solid red; -->
+<!-- border: 1px solid red; -->
     margin-left: 400px;
     background-color: white;
     margin-bottom: 300px;
@@ -40,7 +40,7 @@ img{
 .content1{
     float: left;
     width: 100%;
-    <!--border: 1px solid red;-->
+<!--border: 1px solid red;-->
     background-color: white;
     margin-bottom: 100px;
 }
@@ -52,9 +52,9 @@ img{
 .content2{
     float: left;
     width: 100%;
-    <!--border: 1px solid green;-->
+<!--border: 1px solid green;-->
     background-color: white;
-    margin-left: 1600px;
+    margin-left: 1700px;
     margin-top: -3820px;
 }
 .header-text1{
