@@ -1,2 +1,2 @@
 # eproject_sem1
-https://llehung.github.io/eproject_sem1/view/home.ejs
+https://llehung.github.io/eproject_sem1/views/home.ejs
